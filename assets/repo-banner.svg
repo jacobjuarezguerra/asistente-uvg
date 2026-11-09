@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Asistente UVG</title>
+  <desc id="desc">Tu guía universitaria. Ciencia, comunidad e ideas que crecen. Banner verde con hojas, estrellas y órbitas.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#123e2e"/><stop offset="1" stop-color="#216c4c"/></linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#a7f0c4" opacity=".16"/></pattern>
+    <linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#a7f0c4"/><stop offset="1" stop-color="#73c89e"/></linearGradient>
+  </defs>
+  <rect width="1200" height="280" rx="28" fill="url(#bg)"/>
+  <rect x="700" width="500" height="280" rx="28" fill="url(#dots)"/>
+  <circle cx="1032" cy="150" r="133" fill="#a7f0c4" opacity=".06"/>
+  <circle cx="1032" cy="150" r="104" fill="none" stroke="#a7f0c4" opacity=".17"/>
+  <ellipse cx="1032" cy="150" rx="153" ry="59" transform="rotate(-27 1032 150)" fill="none" stroke="#bcebf0" stroke-dasharray="3 8" opacity=".5"/>
+  <path d="M941 210c-33-62 3-107 69-121 17 63-4 107-69 121Z" fill="url(#leaf)" opacity=".93"/>
+  <path d="m942 209 49-86" fill="none" stroke="#216c4c" stroke-width="3"/>
+  <path d="M1035 217c-4-56 39-91 104-83-9 61-44 89-104 83Z" fill="#d9e7dc"/>
+  <path d="m1035 217 74-57" fill="none" stroke="#50725c" stroke-width="3"/>
+  <path d="m1067 46 7 17 17 7-17 7-7 17-7-17-17-7 17-7Z" fill="#a7f0c4"/>
+  <path d="m889 81 5 11 11 5-11 5-5 11-5-11-11-5 11-5Z" fill="#bcebf0"/>
+  <circle cx="1140" cy="220" r="7" fill="#bcebf0"/><circle cx="908" cy="201" r="4" fill="#a7f0c4"/>
+  <rect x="54" y="43" width="216" height="29" rx="14.5" fill="#a7f0c4" opacity=".16"/>
+  <text x="71" y="63" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2" fill="#c9f5dc">PROYECTO ESTUDIANTIL</text>
+  <text x="52" y="144" font-family="Segoe UI,Arial,sans-serif" font-weight="600" font-size="59" letter-spacing="-2" fill="#f8faf5">Asistente UVG</text>
+  <text x="56" y="186" font-family="Segoe UI,Arial,sans-serif" font-size="24" fill="#c1e9ce">Tu guía universitaria, una pregunta a la vez.</text>
+  <text x="56" y="237" font-family="Segoe UI,Arial,sans-serif" font-size="14" letter-spacing="1.5" fill="#a7f0c4">CIENCIA  ·  COMUNIDAD  ·  IDEAS QUE CRECEN</text>
+</svg>

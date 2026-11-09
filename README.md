@@ -1,8 +1,31 @@
+<div align="center">
+
+![Asistente UVG — Tu guía universitaria](assets/repo-banner.svg)
+
+[![Verificación](https://github.com/jacobjuarezguerra/asistente-uvg/actions/workflows/ci.yml/badge.svg)](https://github.com/jacobjuarezguerra/asistente-uvg/actions/workflows/ci.yml)
+[![Node.js 22 o posterior](https://img.shields.io/badge/Node.js-22%2B-216c4c?style=flat-square&logo=nodedotjs&logoColor=white)](package.json)
+[![Licencia del código MIT](https://img.shields.io/badge/C%C3%B3digo-MIT-38656a?style=flat-square)](LICENSE)
+[![Interfaz Material Design 3](https://img.shields.io/badge/Dise%C3%B1o-Material_3-506456?style=flat-square)](assets/chat.css)
+
+**[🚀 Empezar](#inicio-rápido) · [⚙️ Configurar IA](docs/PROVEEDORES.md) · [📚 Actualizar información](docs/ACTUALIZAR_INFORMACION.md) · [🤝 Entrega institucional](docs/ENTREGA.md)**
+
+</div>
+
 # Asistente UVG
 
 Asistente universitario de consulta con una interfaz inspirada en Material Design 3. Responde a partir de resúmenes de información pública de la Universidad del Valle de Guatemala y muestra las fuentes para comprobarlos.
 
 Esta es una **entrega técnica para evaluación y operación institucional**. La universidad debe aportar su propia cuenta de IA, configurar el servicio, revisar los contenidos y aceptar la recepción. No se incluyen claves personales ni una suscripción pagada.
+
+## Una mirada al asistente
+
+![Vista del chatbot con Jack, tarjetas de consulta y diseño verde inspirado en Material Design 3](assets/preview-chatbot.jpg)
+
+<p align="center"><sub>Jack te da la bienvenida · Diseño adaptable · Fuentes consultables · Modo claro y oscuro</sub></p>
+
+| 💬 Conversa | 📚 Comprueba | 🌱 Mantén al día |
+| :--- | :--- | :--- |
+| Preguntas sobre la vida universitaria con un modelo autorizado. | Resúmenes y enlaces para revisar la información de origen. | Contenidos editables y una guía para el equipo institucional. |
 
 ## Qué recibe la institución
 
