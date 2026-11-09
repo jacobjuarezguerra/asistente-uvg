@@ -39,6 +39,8 @@ test('credenciales y documentos internos no son archivos públicos',async t=>{
   const a=await app(t);
   for(const route of ['/.env','/.env.example','/data/institucion.json','/server.cjs','/.git/config','/../package.json','/docs/ENTREGA.md'])assert.equal((await a.request(route)).status,404,route);
   assert.equal((await a.request('/')).status,200);assert.equal((await a.request('/js/chat.js?v=1')).status,200);
+  const mascot=await a.request('/assets/jack-uvg.png');assert.equal(mascot.status,200);assert.equal(mascot.headers.get('content-type'),'image/png');
+  assert.equal(Buffer.from(await mascot.arrayBuffer()).toString('hex',0,8),'89504e470d0a1a0a');
 });
 test('autorización, origen, modelo, roles y tamaño',async t=>{
   const a=await app(t,{settings:{APP_ACCESS_TOKEN:'test-access-token-at-least-24'}});

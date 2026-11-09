@@ -364,3 +364,108 @@ dialog::backdrop { background: #0007; }
 .generation-fields {display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .launch-notice {border-radius:12px;background:var(--md-sys-color-tertiary-container);color:var(--md-sys-color-on-tertiary-container);padding:16px;font-size:14px;line-height:22px;}
 @media(max-width:420px){.generation-fields{grid-template-columns:1fr;gap:0;}.model-section-header{flex-wrap:wrap;}}
+
+/* Jack and a small garden of ideas. All decoration stays behind the controls. */
+.mascot-avatar {
+  background-color: var(--md-sys-color-primary-container);
+  background-image: url('jack-uvg.png');
+  background-repeat: no-repeat;
+  background-size: 150% auto;
+  background-position: 50% 10%;
+}
+.welcome-card { position: relative; isolation: isolate; }
+.welcome-card::before {
+  content: ''; position: absolute; z-index: -1; pointer-events: none;
+  width: 190px; height: 125px; right: -20px; top: 12px; opacity: .24;
+  background-image: radial-gradient(var(--md-sys-color-outline-variant) 1.2px, transparent 1.2px);
+  background-size: 14px 14px;
+  -webkit-mask-image: radial-gradient(ellipse, #000, transparent 70%);
+  mask-image: radial-gradient(ellipse, #000, transparent 70%);
+}
+.welcome-hero { display: grid; grid-template-columns: minmax(0,1fr) 270px; align-items: center; gap: 24px; }
+.welcome-copy { min-width: 0; }
+.welcome-copy>p { font-size: 15px; line-height: 24px; color: var(--md-sys-color-on-surface-variant); max-width: 520px; margin: 0; }
+.welcome-card h2 { font-size: clamp(36px,3.3vw,48px); letter-spacing: -1.7px; }
+.mascot-scene { position: relative; min-width: 0; width: 270px; height: 286px; margin: 0; display: grid; place-items: end center; }
+.mascot-halo { position: absolute; inset: 31px 8px 13px; border-radius: 46% 54% 41% 59% / 48% 42% 58% 52%; background: var(--md-sys-color-primary-container); transform: rotate(-9deg); opacity: .65; }
+.mascot-halo::after { content:''; position:absolute; inset:18px; border:1px solid var(--md-sys-color-primary); opacity:.13; border-radius:50%; }
+.jack-mascot { position: relative; z-index: 2; display: block; width: 232px; height: auto; max-height: 274px; object-fit: contain; filter: drop-shadow(0 9px 6px #0a44271a); }
+.mascot-orbit { position: absolute; z-index: 1; inset: 0; width: 100%; height: 100%; stroke: var(--md-sys-color-primary); stroke-width: 1; opacity: .3; }
+.mascot-orbit ellipse { stroke-dasharray: 3 7; }
+.mascot-leaf { position: absolute; z-index: 3; width: 38px; height: 50px; fill: var(--md-sys-color-secondary-container); stroke: var(--md-sys-color-primary); stroke-width: 1.4; }
+.leaf-one { left: -5px; bottom: 44px; transform: rotate(-26deg); }
+.leaf-two { right: -5px; top: 51px; width: 27px; height: 36px; transform: rotate(50deg); }
+.scene-spark { position:absolute; z-index:3; font-size:28px; line-height:1; color:var(--md-sys-color-primary); }
+.spark-one { top:27px; left:29px; }
+.spark-two { right:1px; bottom:61px; font-size:34px; color:var(--md-sys-color-tertiary); }
+.scene-dot { position:absolute; border-radius:50%; background:var(--md-sys-color-tertiary-container); z-index:1; }
+.dot-one { width:13px; height:13px; top:21px; right:23px; }
+.dot-two { width:8px; height:8px; left:2px; top:110px; background:var(--md-sys-color-primary); opacity:.35; }
+.mascot-caption { position:absolute; z-index:4; left:15px; bottom:0; display:flex; align-items:center; gap:7px; padding:9px 14px; border-radius:999px; border:1px solid var(--md-sys-color-outline-variant); background:var(--md-sys-color-surface-container-lowest); color:var(--md-sys-color-on-surface); box-shadow:var(--md-sys-elevation-1); font-size:12px; font-weight:600; transform:rotate(-5deg); }
+.mascot-caption span { color:var(--md-sys-color-primary); }
+.suggestion-card { border:1px solid transparent; }
+.suggestion-card::before { content:''; position:absolute; width:78px; height:78px; right:-22px; top:-23px; border:1px solid currentColor; opacity:.1; border-radius:26px; transform:rotate(24deg); pointer-events:none; }
+.card-secondary::before { border-radius:50%; width:92px; height:92px; right:-28px; top:-28px; }
+.card-tertiary::before { border-radius:12px 60px 12px 60px; }
+.card-neutral::before { transform:rotate(45deg); border-radius:22px; }
+.card-icon { width:36px; height:36px; align-items:center; justify-content:center; border-radius:12px; background:#ffffff40; }
+.dark .card-icon { background:#ffffff0c; }
+.card-top { margin-bottom:14px; }
+.message.assistant .message-author::before { width:30px; height:30px; border-radius:10px; transform:none; background:var(--md-sys-color-primary-container) url('jack-uvg.png') 50% 10% / 150% auto no-repeat; }
+.composer-icon { color:var(--md-sys-color-primary); }
+.dark .mascot-halo { opacity:.7; }
+.dark .jack-mascot { filter:drop-shadow(0 8px 14px #0004); }
+.dark .welcome-card::before { opacity:.3; }
+@media(min-width:1280px) { .suggestion-card { min-height:166px; } }
+@media(min-width:721px) and (max-width:1000px) {
+  .welcome-hero { grid-template-columns:minmax(0,1fr) 210px; gap:12px; }
+  .mascot-scene { width:210px; height:248px; }
+  .jack-mascot { width:200px; max-height:235px; }
+  .welcome-card h2 { font-size:39px; }
+  .welcome-copy>p { font-size:14px; line-height:22px; }
+}
+@media(max-height:800px) and (min-width:721px) {
+  .mascot-scene { height:248px; }
+  .jack-mascot { max-height:238px; width:214px; }
+  .welcome-card h2 { font-size:39px; }
+}
+@media(max-width:720px) {
+  .welcome-hero { grid-template-columns:minmax(0,1fr) 170px; gap:12px; }
+  .mascot-scene { width:170px; height:228px; }
+  .jack-mascot { width:174px; max-height:216px; }
+  .mascot-caption { left:0; font-size:11px; padding:8px 10px; }
+  .leaf-one { width:25px; left:-8px; }
+  .leaf-two { width:22px; right:-4px; top:35px; }
+  .spark-one { font-size:22px; left:3px; }
+  .spark-two { font-size:25px; right:-7px; }
+  .welcome-card h2 { font-size:37px; }
+  .welcome-copy>p { font-size:14px; line-height:23px; }
+}
+@media(max-width:560px) {
+  .welcome-hero { grid-template-columns:minmax(0,1fr) 126px; gap:12px; align-items:center; }
+  .welcome-copy { display:contents; }
+  .welcome-badge { grid-column:1; grid-row:1; width:max-content; max-width:100%; font-size:11px; padding-inline:9px; }
+  .welcome-card h2 { grid-column:1; grid-row:2; font-size:32px; line-height:1.16; letter-spacing:-1.2px; margin:4px 0 10px; }
+  .welcome-copy>p { grid-column:1 / -1; grid-row:3; margin-top:4px; }
+  .mascot-scene { grid-column:2; grid-row:1 / 3; width:126px; height:177px; align-self:center; }
+  .jack-mascot { width:132px; max-height:166px; }
+  .mascot-halo { inset:25px 0 16px; }
+  .mascot-caption { font-size:10px; padding:6px 8px; gap:4px; left:0; bottom:2px; white-space:nowrap; }
+  .mascot-leaf { display:none; }
+  .spark-one { font-size:18px; top:13px; left:0; }
+  .spark-two { font-size:20px; right:-4px; bottom:36px; }
+  .dot-one { width:9px; height:9px; top:13px; right:7px; }
+  .dot-two { display:none; }
+  .card-icon { width:30px; height:30px; border-radius:10px; }
+}
+@media(max-width:360px) { .welcome-hero { grid-template-columns:minmax(0,1fr) 106px; gap:8px; } .mascot-scene { width:106px; } .jack-mascot { width:116px; } .welcome-card h2 { font-size:29px; } }
+@media(forced-colors:active) { .mascot-halo,.mascot-orbit,.mascot-leaf,.scene-spark,.scene-dot,.welcome-card::before {display:none;} }
+@media(max-height:800px) and (min-width:1280px) {
+  .mascot-scene { height:210px; }
+  .jack-mascot { max-height:202px; width:184px; }
+  .mascot-halo { inset:22px 22px 10px; }
+  .mascot-caption { left:29px; }
+  .suggestion-card { min-height:136px; padding:14px 16px; }
+  .card-top { margin-bottom:10px; }
+  .suggestions { margin-top:18px; margin-bottom:12px; }
+}

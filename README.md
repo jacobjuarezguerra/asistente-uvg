@@ -7,6 +7,7 @@ Esta es una **entrega técnica para evaluación y operación institucional**. La
 ## Qué recibe la institución
 
 - Interfaz adaptable a computadora y celular, con modo oscuro.
+- Bienvenida con Jack, el dragón de la UVG, y decoración local adaptable a ambos temas. [Procedencia del recurso visual](docs/RECURSOS_VISUALES.md).
 - Chat con fuentes, historial de la sesión y descarga de conversaciones.
 - Explorador de información institucional que funciona sin consumir la API.
 - Conexión de IA configurable en el servidor: API compatible con Chat Completions o Anthropic Messages.
@@ -129,6 +130,6 @@ docs/                      Guías de administración y recepción
 
 ## Acceso al repositorio y licencia
 
-El repositorio se entrega privado. Su propietario puede invitar cuentas concretas desde **Settings → Collaborators → Add people**. Compartir el enlace no concede acceso por sí solo. La universidad puede solicitar la transferencia a su propia organización de GitHub cuando esté lista para administrarlo.
+El repositorio está público para facilitar su revisión. Su propietario puede cambiar la visibilidad a privado desde **Settings** e invitar cuentas concretas desde **Collaborators → Add people**. La universidad puede solicitar la transferencia a su propia organización de GitHub cuando esté lista para administrarlo.
 
 Se conserva la licencia MIT del código recibido. Véanse [LICENSE](LICENSE) y [NOTICE.md](NOTICE.md). No se incluye una autorización institucional para presentar el prototipo como un servicio oficial.

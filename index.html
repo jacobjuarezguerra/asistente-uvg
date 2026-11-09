@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f8faf5">
+  <link rel="icon" type="image/png" href="assets/jack-uvg.png">
   <title>Asistente UVG · Tu guía universitaria</title>
   <link rel="stylesheet" href="assets/chat.css">
   <script defer src="js/knowledge.js"></script>
@@ -38,7 +39,7 @@
   <div class="app-shell">
     <aside class="sidebar" aria-label="Información del asistente">
       <a class="brand" href="index.html" aria-label="Asistente UVG, inicio">
-        <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="#i-school"/></svg></span>
+        <span class="brand-mark mascot-avatar" aria-hidden="true"></span>
         <span class="brand-label">Asistente UVG<small>Tu guía universitaria</small></span>
       </a>
       <div class="nav-current" aria-current="page"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span>Conversación</span><span class="nav-active-dot" aria-hidden="true"></span></div>
@@ -59,7 +60,7 @@
 
     <main class="chat-panel">
       <header class="chat-header">
-        <div class="header-identity"><span class="mobile-brand" aria-hidden="true"><svg class="icon"><use href="#i-school"/></svg></span><div><h1>Asistente UVG</h1><p id="connectionStatus" role="status">Conectando con el servicio institucional</p></div></div>
+        <div class="header-identity"><span class="mobile-brand mascot-avatar" aria-hidden="true"></span><div><h1>Asistente UVG</h1><p id="connectionStatus" role="status">Conectando con el servicio institucional</p></div></div>
         <div class="toolbar" aria-label="Herramientas del chat">
           <button id="sourcesButton" class="button button-quiet" aria-label="Explorar fuentes" title="Explorar fuentes"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><span class="button-label">Fuentes</span></button>
           <button id="themeButton" class="button icon-button" aria-label="Activar modo oscuro" aria-pressed="false" title="Activar modo oscuro"><svg class="icon theme-dark-icon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="icon theme-light-icon" aria-hidden="true"><use href="#i-sun"/></svg></button>
@@ -69,9 +70,23 @@
 
       <section id="chatMessages" class="chat-messages" role="log" aria-label="Conversación" aria-live="polite" aria-relevant="additions text" tabindex="0">
         <div class="welcome-card" id="welcomeCard">
-          <div class="welcome-badge"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Tu guía de la UVG</div>
-          <h2>Hola, ¿qué querés<br><span>descubrir hoy?</span></h2>
-          <p>Admisiones, carreras, becas y recursos. Encontrá tu próximo paso con información de fuentes oficiales.</p>
+          <div class="welcome-hero">
+            <div class="welcome-copy">
+              <div class="welcome-badge"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Tu guía de la UVG</div>
+              <h2>Hola, ¿qué querés<br><span>descubrir hoy?</span></h2>
+              <p>Admisiones, carreras, becas y recursos. Encontrá tu próximo paso con información de fuentes oficiales.</p>
+            </div>
+            <figure class="mascot-scene">
+              <div class="mascot-halo" aria-hidden="true"></div>
+              <svg class="mascot-orbit" viewBox="0 0 300 300" fill="none" aria-hidden="true"><ellipse cx="150" cy="164" rx="141" ry="79" transform="rotate(-26 150 164)"/><path d="M36 204c-5-22-1-42 12-60M253 105c12 13 20 29 21 47"/></svg>
+              <svg class="mascot-leaf leaf-one" viewBox="0 0 48 64" aria-hidden="true"><path d="M7 57C-5 20 20 5 43 3c2 27-9 48-36 54Z"/><path d="M7 57 34 17"/></svg>
+              <svg class="mascot-leaf leaf-two" viewBox="0 0 48 64" aria-hidden="true"><path d="M7 57C-5 20 20 5 43 3c2 27-9 48-36 54Z"/><path d="M7 57 34 17"/></svg>
+              <span class="scene-spark spark-one" aria-hidden="true">✦</span><span class="scene-spark spark-two" aria-hidden="true">✧</span>
+              <span class="scene-dot dot-one" aria-hidden="true"></span><span class="scene-dot dot-two" aria-hidden="true"></span>
+              <img class="jack-mascot" src="assets/jack-uvg.png" alt="Jack, el dragón de la UVG, saludando" width="576" height="643" fetchpriority="high" decoding="async">
+              <figcaption class="mascot-caption"><span aria-hidden="true">✦</span> ¡Hola, soy Jack!</figcaption>
+            </figure>
+          </div>
           <div class="suggestions">
             <button data-question="¿Cómo empiezo mi proceso de admisión en la UVG?" class="suggestion-card card-primary"><span class="card-top"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-school"/></svg></span><svg class="icon card-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="card-title">Empezar en la UVG</span><span class="card-description">Pasos y requisitos de admisión</span></button>
             <button data-question="¿Qué opciones de becas y ayuda financiera hay y cómo aplico?" class="suggestion-card card-secondary"><span class="card-top"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-wallet"/></svg></span><svg class="icon card-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="card-title">Encontrar una beca</span><span class="card-description">Opciones de ayuda financiera</span></button>

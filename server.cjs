@@ -4,7 +4,7 @@ const {readConfig}=require('./lib/config.cjs');
 const {makeRequest,readAnswer}=require('./lib/providers.cjs');
 const {loadKnowledge,buildPrompt}=require('./lib/knowledge.cjs');
 const APP_ID='asistente-uvg';
-const assets=new Map([['/','index.html'],['/index.html','index.html'],['/assets/chat.css','assets/chat.css'],['/js/chat.js','js/chat.js'],['/js/knowledge.js','js/knowledge.js']]);
+const assets=new Map([['/','index.html'],['/index.html','index.html'],['/assets/chat.css','assets/chat.css'],['/assets/jack-uvg.png','assets/jack-uvg.png'],['/js/chat.js','js/chat.js'],['/js/knowledge.js','js/knowledge.js']]);
 class HttpError extends Error{constructor(status,message){super(message);this.status=status;}}
 function reply(res,status,data){if(res.destroyed||res.writableEnded)return;const b=Buffer.from(JSON.stringify(data));res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Content-Length':b.length});res.end(b);}
 async function readBody(req){
@@ -68,8 +68,8 @@ function createServer({config=readConfig(),staticRoot=__dirname,knowledge=loadKn
       if(!['GET','HEAD'].includes(req.method))throw new HttpError(405,'Método no permitido.');
       const file=assets.get(route);if(!file)throw new HttpError(404,'Archivo no disponible.');
       let content;try{content=await fs.readFile(path.join(staticRoot,file));}catch{throw new HttpError(404,'Archivo no disponible.');}
-      const type=file.endsWith('.css')?'text/css':file.endsWith('.js')?'text/javascript':'text/html';
-      res.writeHead(200,{'Content-Type':type+'; charset=utf-8','Content-Length':content.length});res.end(req.method==='HEAD'?undefined:content);
+      const type=file.endsWith('.png')?'image/png':file.endsWith('.css')?'text/css':file.endsWith('.js')?'text/javascript':'text/html';
+      res.writeHead(200,{'Content-Type':type+(type.startsWith('image/')?'':'; charset=utf-8'),'Content-Length':content.length});res.end(req.method==='HEAD'?undefined:content);
     }catch(error){reply(res,error instanceof HttpError?error.status:500,{error:{message:error instanceof HttpError?error.message:'Error interno del servicio.'}});}
   });
 }
