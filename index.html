@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8faf5">
+  <title>Asistente UVG · Tu guía universitaria</title>
+  <link rel="stylesheet" href="assets/chat.css">
+  <script defer src="js/knowledge.js"></script>
+  <script defer src="js/chat.js"></script>
+</head>
+<body>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-3 2v-9.5A10.5 10.5 0 0 1 11.5 2 9.5 9.5 0 0 1 21 11.5Z" transform="translate(1 0) scale(.94)"/><path d="M7 8h9M7 12h6"/></symbol>
+    <symbol id="i-add" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5c-3-2-6-2-10-1v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-4-1-7-1-10 1Zm0 0v15M5 8h3M5 12h3M16 8h3M16 12h3"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 13.1A8.5 8.5 0 0 1 10.9 3.5a8.5 8.5 0 1 0 9.6 9.6Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="m9 3-.6 2-2 .9-1.9-.5-2 3.4L4 10.3v2.4l-1.5 1.5 2 3.4 1.9-.5 2 .9.6 2h4l.6-2 2-.9 1.9.5 2-3.4-1.5-1.5v-2.4l1.5-1.5-2-3.4-1.9.5-2-.9L13 3Z" transform="translate(1 .5)"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-school" viewBox="0 0 24 24"><path d="m2 8 10-5 10 5-10 5L2 8Zm4 2v7c4 3 8 3 12 0v-7M22 8v8"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 8H4a2 2 0 0 1 0-4h14v4M4 8v12h16V8m0 5h-5v4h5"/><path d="M17 15h.1"/></symbol>
+    <symbol id="i-location" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.5 5.5a5.3 5.3 0 0 0-8.5 1 5.3 5.3 0 0 0-8.5-1c-3 3 0 7 8.5 14 8.5-7 11.5-11 8.5-14Z"/></symbol>
+    <symbol id="i-library" viewBox="0 0 24 24"><path d="m3 3 4 0v17H3V3Zm4 0h5v17H7M14 4l4-1 4 16-4 1-4-16ZM4 7h2M8 7h3M16 7l3-.8M4 16h2M8 16h3"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.8 6.2L21 12l-6.2 2.8L12 21l-2.8-6.2L3 12l6.2-2.8L12 3ZM20 2v4M18 4h4"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m3 3 19 9-19 9 4-9-4-9Zm4 9h15"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 8 3v6c0 5-4 8-8 11-4-3-8-6-8-11V5l8-3Z"/><path d="m8 11 3 3 5-6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="9" r="5"/><path d="m11.5 12.5 8 8h2v-3h-3v-3h-3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m7 7-5 5 5 5m10-10 5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Información del asistente">
+      <a class="brand" href="index.html" aria-label="Asistente UVG, inicio">
+        <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="#i-school"/></svg></span>
+        <span class="brand-label">Asistente UVG<small>Tu guía universitaria</small></span>
+      </a>
+      <div class="nav-current" aria-current="page"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span>Conversación</span><span class="nav-active-dot" aria-hidden="true"></span></div>
+      <div class="sidebar-intro"><h2>Explora la UVG</h2><p>Información para dar el siguiente paso.</p></div>
+      <nav class="topic-nav" aria-label="Explorar información sin usar la API">
+        <button data-topic="admisiones" aria-label="Consultar admisiones" title="Admisiones"><svg class="icon" aria-hidden="true"><use href="#i-school"/></svg><span class="nav-label">Admisiones</span></button>
+        <button data-topic="carreras" aria-label="Consultar carreras" title="Carreras"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><span class="nav-label">Carreras</span></button>
+        <button data-topic="becas" aria-label="Consultar becas y financiamiento" title="Becas y financiamiento"><svg class="icon" aria-hidden="true"><use href="#i-wallet"/></svg><span class="nav-label">Becas y financiamiento</span></button>
+        <button data-topic="central" aria-label="Consultar campus y contactos" title="Campus y contactos"><svg class="icon" aria-hidden="true"><use href="#i-location"/></svg><span class="nav-label">Campus y contactos</span></button>
+        <button data-topic="bienestar" aria-label="Consultar vida estudiantil" title="Vida estudiantil"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><span class="nav-label">Vida estudiantil</span></button>
+        <button data-topic="bibliotecas" aria-label="Consultar recursos de estudio" title="Recursos de estudio"><svg class="icon" aria-hidden="true"><use href="#i-library"/></svg><span class="nav-label">Recursos de estudio</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="knowledge-badge"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><div><strong id="knowledgeSummary">Cargando información…</strong><p id="knowledgeDate"></p></div></div>
+        <p class="project-note">Un proyecto estudiantil.<br>No es un canal oficial de la UVG.</p>
+      </div>
+    </aside>
+
+    <main class="chat-panel">
+      <header class="chat-header">
+        <div class="header-identity"><span class="mobile-brand" aria-hidden="true"><svg class="icon"><use href="#i-school"/></svg></span><div><h1>Asistente UVG</h1><p id="connectionStatus" role="status">Conectando con el servicio institucional</p></div></div>
+        <div class="toolbar" aria-label="Herramientas del chat">
+          <button id="sourcesButton" class="button button-quiet" aria-label="Explorar fuentes" title="Explorar fuentes"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><span class="button-label">Fuentes</span></button>
+          <button id="themeButton" class="button icon-button" aria-label="Activar modo oscuro" aria-pressed="false" title="Activar modo oscuro"><svg class="icon theme-dark-icon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="icon theme-light-icon" aria-hidden="true"><use href="#i-sun"/></svg></button>
+          <button id="configButton" class="button button-primary" aria-label="Preferencias del chat" title="Preferencias del chat"><svg class="icon" aria-hidden="true"><use href="#i-settings"/></svg><span class="button-label">Preferencias</span></button>
+        </div>
+      </header>
+
+      <section id="chatMessages" class="chat-messages" role="log" aria-label="Conversación" aria-live="polite" aria-relevant="additions text" tabindex="0">
+        <div class="welcome-card" id="welcomeCard">
+          <div class="welcome-badge"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Tu guía de la UVG</div>
+          <h2>Hola, ¿qué querés<br><span>descubrir hoy?</span></h2>
+          <p>Admisiones, carreras, becas y recursos. Encontrá tu próximo paso con información de fuentes oficiales.</p>
+          <div class="suggestions">
+            <button data-question="¿Cómo empiezo mi proceso de admisión en la UVG?" class="suggestion-card card-primary"><span class="card-top"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-school"/></svg></span><svg class="icon card-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="card-title">Empezar en la UVG</span><span class="card-description">Pasos y requisitos de admisión</span></button>
+            <button data-question="¿Qué opciones de becas y ayuda financiera hay y cómo aplico?" class="suggestion-card card-secondary"><span class="card-top"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-wallet"/></svg></span><svg class="icon card-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="card-title">Encontrar una beca</span><span class="card-description">Opciones de ayuda financiera</span></button>
+            <button data-question="¿Qué carreras de tecnología ofrece la UVG?" class="suggestion-card card-tertiary"><span class="card-top"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span><svg class="icon card-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="card-title">Explorar tecnología</span><span class="card-description">Carreras para crear e innovar</span></button>
+            <button data-question="¿Dónde encuentro apoyo para estudiar y organizarme mejor?" class="suggestion-card card-neutral"><span class="card-top"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span><svg class="icon card-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="card-title">Sentirme acompañado</span><span class="card-description">Bienestar y apoyo para estudiar</span></button>
+          </div>
+          <p class="welcome-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><span>¿Solo querés explorar? <button class="text-button" id="welcomeSources">Consulta las fuentes</button>.</span></p>
+        </div>
+      </section>
+
+      <div class="composer-area">
+        <div class="conversation-tools"><button id="newChatButton" class="text-button tool-chip" disabled><svg class="icon" aria-hidden="true"><use href="#i-add"/></svg>Nueva conversación</button><button id="exportButton" class="text-button tool-chip" disabled><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="export-label">Descargar conversación</span></button><span id="sendStatus" role="status"></span></div>
+        <form id="messageForm" class="composer">
+          <span class="composer-icon" aria-hidden="true"><svg class="icon"><use href="#i-chat"/></svg></span>
+          <label for="messageInput" class="sr-only">Tu pregunta</label>
+          <textarea id="messageInput" rows="1" maxlength="6000" placeholder="Preguntá sobre la UVG…"></textarea>
+          <button type="submit" id="sendButton" aria-label="Enviar mensaje" title="Enviar mensaje"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg></button>
+        </form>
+        <p class="composer-note">Proyecto estudiantil, no oficial. Confirma costos y fechas con la UVG. <span class="keyboard-hint">Enter para enviar · Shift + Enter para otra línea</span></p>
+      </div>
+    </main>
+  </div>
+
+  <dialog id="configDialog" aria-labelledby="configTitle">
+    <div class="dialog-header"><div><span class="dialog-icon" aria-hidden="true"><svg class="icon"><use href="#i-settings"/></svg></span><h2 id="configTitle">Preferencias del chat</h2></div><button class="close-button" data-close="configDialog" aria-label="Cerrar preferencias"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+    <form id="configForm" class="dialog-body">
+      <p>Los modelos disponibles y la conexión de IA son administrados por la institución.</p>
+      <div id="accessGroup" hidden><label for="accessInput">Código de acceso al servicio</label><input id="accessInput" type="password" autocomplete="off" aria-describedby="accessHelp"><p id="accessHelp" class="field-note">Si el servicio lo requiere, la institución te proporcionará este código. No es la clave del proveedor de IA.</p></div>
+      <label for="modelSelect">Modelo autorizado</label><select id="modelSelect"><option value="">Cargando modelos…</option></select>
+      <details class="generation-options"><summary>Ajustes de respuesta</summary><div class="generation-fields">
+        <div><label for="temperatureInput">Creatividad</label><input id="temperatureInput" type="number" min="0" max="1" step="0.1" value="0.2"></div>
+        <div><label for="maxTokensInput">Límite de respuesta (tokens)</label><input id="maxTokensInput" type="number" min="128" max="2048" step="1" value="2048"></div>
+      </div></details>
+      <p id="configStatus" role="status" aria-live="polite" class="status-message"></p>
+      <div class="dialog-actions"><button type="submit" class="button button-primary">Guardar preferencias</button></div>
+      <button type="button" id="clearAccessButton" class="text-button">Borrar código de esta pestaña</button>
+    </form>
+  </dialog>
+
+  <dialog id="knowledgeDialog" class="knowledge-dialog" aria-labelledby="knowledgeTitle">
+    <div class="dialog-header"><div><span class="dialog-icon" aria-hidden="true"><svg class="icon"><use href="#i-book"/></svg></span><h2 id="knowledgeTitle">Información con fuentes</h2></div><button class="close-button" data-close="knowledgeDialog" aria-label="Cerrar fuentes"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+    <div class="dialog-body"><p id="knowledgeDescription"></p><div class="search-field"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><label for="knowledgeSearch" class="sr-only">Buscar un tema</label><input id="knowledgeSearch" type="search" placeholder="Buscar becas, campus, biblioteca…"></div><div id="knowledgeList" class="knowledge-list"></div><p class="field-note knowledge-disclaimer">Son resúmenes de páginas oficiales, guardados localmente. La fecha de consulta no garantiza que la página esté actualizada. Abre la fuente para confirmar cambios.</p></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

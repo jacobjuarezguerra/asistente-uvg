@@ -1,0 +1,203 @@
+// Generado desde data/institucion.json. No editar manualmente.
+window.UVG_KNOWLEDGE = {
+  "version": 1,
+  "reviewed": "2026-11-05",
+  "institution": "Universidad del Valle de Guatemala",
+  "scope": "Síntesis de fuentes oficiales públicas; no es consulta en tiempo real.",
+  "documents": [
+    {
+      "id": 1,
+      "slug": "universidad",
+      "title": "Acerca de la UVG",
+      "reviewed": "2026-11-05",
+      "content": "La Universidad del Valle de Guatemala (UVG) presenta un modelo que combina artes liberales con formación especializada en ciencias, tecnología, innovación, emprendimiento y educación.\nLa página oficial de valores destaca respeto, responsabilidad, innovación y emprendimiento, pensamiento crítico, compromiso y confianza, dentro de una cultura de ética y excelencia.\nEste asistente es un proyecto estudiantil y no representa un canal oficial de la universidad.",
+      "sources": [
+        {
+          "title": "Acerca de UVG",
+          "url": "https://www.uvg.edu.gt/nosotros/inicio/"
+        },
+        {
+          "title": "Valores institucionales",
+          "url": "https://www.uvg.edu.gt/nosotros/valores/"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 2,
+      "slug": "admisiones",
+      "title": "Admisiones de pregrado",
+      "reviewed": "2026-11-05",
+      "content": "Para licenciaturas, el proceso publicado comienza en https://admisiones.uvg.edu.gt/: crear usuario, verificar el correo y completar el formulario. Se solicita fotografía, certificación oficial de cursos desde primero básico hasta cuarto o quinto diversificado, y documento de identificación: DPI, partida de nacimiento si eres menor de edad o pasaporte si eres extranjero.\nDespués se paga y se asigna la prueba de admisión. La página enlaza guías de preparación de la PAA. Si ya realizaste la PAA en otra institución, debes indicarlo para que UVG pueda consultar el resultado con College Board.\nLa resolución se consulta en el portal; la página estima dos a tres semanas. Una vez admitido se habilita la preinscripción.\nEducación tiene un procedimiento diferenciado con entrevista coordinada por Admisiones. Para traslados se solicitan notas universitarias, carta de buena conducta y programas de cursos para evaluar convalidaciones. No se garantiza la aceptación ni las equivalencias.",
+      "sources": [
+        {
+          "title": "Proceso de admisión por programa",
+          "url": "https://www.uvg.edu.gt/admisiones/aplica-nuestros-programas/"
+        }
+      ],
+      "note": "Confirma requisitos, modalidad de la prueba y fechas para tu programa y campus. El pago de la prueba muestra importes distintos en páginas oficiales; no se carga un precio como vigente."
+    },
+    {
+      "id": 3,
+      "slug": "carreras",
+      "title": "Carreras y oferta académica",
+      "reviewed": "2026-11-05",
+      "content": "El catálogo oficial permite explorar licenciaturas, profesorados, maestrías y posgrados. Los programas y modalidades deben confirmarse en su página específica y por campus.\nEjemplos que aparecen en el catálogo: Biomédica, Biotecnología Industrial, Civil, Civil Arquitectónica, Computación y Tecnologías de la Información, Sistemas de Información Computacional, Electrónica, Industrial, Mecatrónica, Biología, Bioquímica y Microbiología, Biotecnología Molecular, Física, Matemática Aplicada, Nutrición, Química, Química Farmacéutica, Antropología, Arqueología, Psicología, Relaciones Internacionales, Comunicación Estratégica, Educación, Composición y Producción Musical, Diseño de Producto e Innovación y Arquitectura.\nLa lista anterior es una selección, no un inventario completo. No supone que todos los programas se impartan en todos los campus. Para duración, pénsum, horarios, requisitos y denominación exacta del título, consulta la ficha del programa.",
+      "sources": [
+        {
+          "title": "Catálogo de carreras",
+          "url": "https://www.uvg.edu.gt/carreras/"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 4,
+      "slug": "becas",
+      "title": "Becas y crédito educativo",
+      "reviewed": "2026-11-05",
+      "content": "El Programa Regular de Ayuda Financiera evalúa la situación socioeconómica de estudiantes admitidos y puede otorgar una beca, crédito educativo o una combinación. La beca no se reembolsa; el crédito sí debe devolverse según el contrato aplicable.\nPrimero debes ser admitido. Luego se llena la solicitud y se adjuntan los documentos pedidos en el portal de admisiones. El comité evalúa el expediente; puede requerir correcciones, entrevista o visita. No se garantiza un porcentaje.\nLa página también describe las becas de Liderazgo en Ciencias, Liderazgo en Negocios, Potencia-T y Olimpiada Nacional de Ciencias. Cada una tiene requisitos específicos. Potencia-T depende, entre otros factores, de la relación del colegio con UVG.\nLa página contiene convocatorias de años anteriores. Confirma la convocatoria del ciclo que te interesa antes de aplicar; no se presentan descuentos, porcentajes o fechas antiguas como ofertas vigentes.",
+      "sources": [
+        {
+          "title": "Opciones oficiales de ayuda financiera",
+          "url": "https://www.uvg.edu.gt/admisiones/becas/"
+        }
+      ],
+      "note": "La solicitud se realiza en el portal oficial, no en este chat. No envíes aquí DPI, constancias de ingresos ni documentos familiares."
+    },
+    {
+      "id": 5,
+      "slug": "cobertura",
+      "title": "Cobertura y obligaciones de la ayuda",
+      "reviewed": "2026-11-05",
+      "content": "Según las preguntas frecuentes de Ayudas Financieras, la ayuda ordinaria se aplica a cuotas de estudio; no cubre inscripción, laboratorios, servicios educativos digitales, parqueo, cursos fuera de pénsum, inglés o convalidaciones. Algunos convenios de donantes externos pueden tener coberturas diferentes.\nLas becas implican horas de servicio cuya cantidad depende del porcentaje otorgado. Quien solo tiene crédito no realiza horas de beca. El director de carrera orienta sobre las actividades.\nEl expediente económico y el comité determinan si se concede beca, crédito o ambos; no se puede prometer una beca específica desde el chatbot.\nLa página de preguntas frecuentes publica el PBX (+502) 2507-1500, extensiones 21429, 21771, 21516 y 21772. Confirma el contacto y las condiciones antes de entregar documentos.",
+      "sources": [
+        {
+          "title": "Preguntas frecuentes de ayuda financiera",
+          "url": "https://www.uvg.edu.gt/admisiones/preguntas-frecuentes-ayudas-financieras/"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 6,
+      "slug": "costos",
+      "title": "Costos y fechas vigentes",
+      "reviewed": "2026-11-05",
+      "content": "Las cuotas dependen de la carga académica. Las preguntas frecuentes indican dos matrículas al año y diez cuotas mensuales; los importes vigentes deben solicitarse a Admisiones.\nLa sección de inicio de Admisiones enlaza un tarifario descargable de carreras. Consulta el ciclo y el programa del documento antes de tomarlo como referencia.\nNo se cargan precios fijos de matrícula, mensualidad, prueba de admisión, parqueo ni laboratorios: son variables y se encontraron importes distintos de la prueba entre páginas oficiales.\nPara fechas de inscripción, exámenes, retiros, asuetos y pagos, revisa el calendario académico y confirma el campus, ciclo y año. El chatbot no consulta el calendario en tiempo real ni puede garantizar cupos o convocatorias abiertas.",
+      "sources": [
+        {
+          "title": "Preguntas frecuentes de Admisiones",
+          "url": "https://www.uvg.edu.gt/admisiones/preguntas-frecuentes/"
+        },
+        {
+          "title": "Tarifario desde Admisiones",
+          "url": "https://www.uvg.edu.gt/admisiones/inicio/"
+        },
+        {
+          "title": "Calendario académico",
+          "url": "https://www.uvg.edu.gt/calendario-academico/"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 7,
+      "slug": "central",
+      "title": "Campus Central y contacto",
+      "reviewed": "2026-11-05",
+      "content": "Campus Central: 18 avenida 11-95, zona 15, Vista Hermosa III, Ciudad de Guatemala, código postal 01015.\nLa página de inscripción publica el PBX (+502) 2507-1500 y el teléfono directo de Admisiones (+502) 2368-8410. Usa estos canales para confirmar visitas, costos, requisitos, horarios y disponibilidad de programas.\nLos trámites se hacen mediante canales oficiales; el asistente no inscribe estudiantes, recibe pagos ni tiene acceso a expedientes.",
+      "sources": [
+        {
+          "title": "Contacto e inscripción UVG",
+          "url": "https://www.uvg.edu.gt/inscribete/"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 8,
+      "slug": "sur",
+      "title": "Campus Sur",
+      "reviewed": "2026-11-05",
+      "content": "UVG Campus Sur está ubicado en el kilómetro 92.5 de la carretera a Mazatenango, Santa Lucía Cotzumalguapa, Escuintla.\nContacto general publicado: (+502) 7955-2800; info@campussur.uvg.edu.gt.\nSu portal reúne oferta académica, admisiones, becas, programas técnicos y servicios. También da acceso a Canvas y al portal electrónico.\nNo se deben trasladar automáticamente a Campus Sur los costos, pénsum, programas o requisitos del Campus Central. Confirma la oferta y los horarios directamente con Campus Sur.",
+      "sources": [
+        {
+          "title": "Portal oficial Campus Sur",
+          "url": "https://campussur.uvg.edu.gt/"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 9,
+      "slug": "altiplano",
+      "title": "Campus Altiplano",
+      "reviewed": "2026-11-05",
+      "content": "UVG Campus Altiplano está ubicado en el kilómetro 137, caserío Xolbé, El Tablón, Sololá. El PBX publicado es (+502) 7931-0814.\nEl portal incluye información de ingeniería, educación, ciencias y humanidades, Instituto Tecnológico, ayuda financiera y servicios. Entre los programas listados figuran técnicos en Informática y Agroforestería, y licenciaturas en Tecnología de Sistemas Informáticos, Administración de Empresas y Mercadeo, Turismo y Psicopedagogía.\nEstos son ejemplos del portal, no una garantía de apertura de cohortes. Confirma denominaciones, grados, requisitos y horarios con el campus.",
+      "sources": [
+        {
+          "title": "Portal oficial Campus Altiplano",
+          "url": "https://altiplano.uvg.edu.gt/"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 10,
+      "slug": "bienestar",
+      "title": "Bienestar y apoyo estudiantil",
+      "reviewed": "2026-11-05",
+      "content": "La Unidad de Bienestar (UBE) ofrece apoyo mediante consejería para rendimiento académico, elección de carrera, relaciones personales y desarrollo profesional. Su página describe servicios gratuitos y confidenciales, tanto individuales como grupales, y actividades de prevención y apoyo.\nPara acceder se solicita una cita inicial. La página publica la oficina F-105 del Centro de Atención Estudiantil y el teléfono (+502) 2507-1500, extensiones 21537, 21675 y 21574. Horario publicado: lunes a viernes, de 8:00 a 17:00; confirma disponibilidad al solicitar la cita.\nLa web de UBE contiene un botón para solicitar cita. El chatbot orienta sobre el servicio, pero no brinda atención clínica ni confirma citas.",
+      "sources": [
+        {
+          "title": "Unidad de Bienestar y solicitud de cita",
+          "url": "https://www.uvg.edu.gt/vida-estudiantil/unidad-bienestar/"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 11,
+      "slug": "bibliotecas",
+      "title": "Bibliotecas y recursos de estudio",
+      "reviewed": "2026-11-05",
+      "content": "El sistema de bibliotecas ofrece catálogo de libros, bases de datos, revistas electrónicas, repositorio institucional, apoyo con artículos y capacitación en recursos digitales. El catálogo permite consultar libros y gestionar reservas o renovaciones según las condiciones del servicio.\nTambién enlaza el Academic Writing Lab (AWL) para apoyo en escritura académica y el Laboratorio de Visualización Multimedia.\nLa Biblioteca Amparo Codina de Campollo está en Campus Central, edificio CIT, tercer nivel, oficina 327. Teléfono publicado: (+502) 2507-1500, extensión 21496. Campus Sur cuenta con la Biblioteca Carlos Nottebohm y Altiplano con la Biblioteca John R. Hamilton.\nConfirma horarios, disponibilidad y requisitos de acceso en el portal. Este asistente no accede a préstamos ni a cuentas de biblioteca.",
+      "sources": [
+        {
+          "title": "Bibliotecas UVG",
+          "url": "https://bibliotecas.uvg.edu.gt/"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 12,
+      "slug": "portales",
+      "title": "Portales y accesos útiles",
+      "reviewed": "2026-11-05",
+      "content": "La web de UVG enlaza el Portal Electrónico en https://portal.uvg.edu.gt/ y Canvas en https://uvg.instructure.com/. El portal de solicitudes de admisión es https://admisiones.uvg.edu.gt/.\nEstos servicios pueden requerir usuario y contraseña institucionales. Abre los enlaces directamente y nunca compartas tu contraseña ni códigos de verificación con el chatbot.\nEl calendario académico se consulta en https://www.uvg.edu.gt/calendario-academico/. Para reglamentos, directorio, asociaciones y otros servicios, usa los accesos publicados en la web principal.\nEl chatbot solo tiene una copia local de información pública; no ve tus notas, cursos asignados, pagos ni expedientes.",
+      "sources": [
+        {
+          "title": "Accesos publicados por UVG",
+          "url": "https://www.uvg.edu.gt/"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 13,
+      "slug": "computacion",
+      "title": "Computación y Tecnologías de la Información",
+      "reviewed": "2026-11-05",
+      "content": "La página de Ingeniería en Ciencia de la Computación y Tecnologías de la Información describe una formación en desarrollo de software, análisis de información, algoritmos, ciencia, ingeniería y matemáticas.\nPresenta áreas de especialización como inteligencia artificial, seguridad de sistemas, desarrollo de videojuegos, ciencia de datos, experiencia de usuario e ingeniería aeroespacial. Las opciones pueden tener requisitos y costos adicionales; no se garantiza su disponibilidad para todas las cohortes.\nLa ficha enlaza el plan de estudios y un folleto. Consulta esos documentos y al departamento para confirmar cursos, duración, requisitos de graduación, equivalencias y especializaciones de tu promoción.\nNo se incorporan estadísticas salariales ni fechas promocionales sin año como promesas actuales.",
+      "sources": [
+        {
+          "title": "Ficha oficial de Computación",
+          "url": "https://www.uvg.edu.gt/carreras/computacion-y-tecnologias-de-la-informacion/"
+        }
+      ],
+      "note": ""
+    }
+  ]
+};

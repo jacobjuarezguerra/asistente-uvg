@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+*.dpapi
+*.key
+*.pem
+personal-config.js
+config.local.*
+backup*/
+*.zip
+coverage/
+.DS_Store
+Thumbs.db
+inicio-error.txt
